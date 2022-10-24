@@ -1,5 +1,5 @@
 [![R-CMD-check](https://github.com/kkmann/simulatr/actions/workflows/check.yml/badge.svg)](https://github.com/kkmann/simulatr/actions/workflows/check.yml)
-[![lint](https://github.com/kkmannsimulatr/actions/workflows/lint.yml/badge.svg)](https://github.com/kkmann/simulatr/actions/workflows/lint.yml)
+[![lint](https://github.com/kkmann/simulatr/actions/workflows/lint.yml/badge.svg)](https://github.com/kkmann/simulatr/actions/workflows/lint.yml)
 [![coverage](https://github.com/kkmann/simulatr/actions/workflows/covr.yml/badge.svg)](https://github.com/kkmann/simulatr/actions/workflows/covr.yml)
 [![pkgdown](https://github.com/kkmann/simulatr/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/kkmann/simulatr/actions/workflows/pkgdown.yml)
 [![metacran version](https://www.r-pkg.org/badges/version/simulatr)](https://cran.r-project.org/package=simulatr)
