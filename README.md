@@ -14,6 +14,12 @@ devtools::check()
 ```
 Inspect the output and fix the problems one by one.
 
+To build the documentation locally, use
+```
+# install.packages("pkgdown")
+pkgdown::build_site()
+```
+
 Hint: start with the file `R/f_simulate_continuous_data.R`
 
 Remember to create a branch for each problem, commit your changes, push them,
