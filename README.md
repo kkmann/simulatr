@@ -13,6 +13,9 @@ Then run the package checks in the root directory by calling
 devtools::check()
 ```
 Inspect the output and fix the problems one by one.
+
+Hint: start with the file `R/f_simulate_continuous_data.R`
+
 Remember to create a branch for each problem, commit your changes, push them,
 and open a pull request from your branch on 'main'.
 Keep working on your branch until the error/warning you worked on is gone,
