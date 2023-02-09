@@ -60,3 +60,6 @@ start running!
 13. Celebrate!
 
 Hint: start with the file `R/f_simulate_continuous_data.R`
+
+Hint: after editing the documentation (roxygen comments) you need to run
+`devtools:document()` to update the actual `*.Rd` documentation! 
