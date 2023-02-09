@@ -30,21 +30,33 @@ GitHub.
 If you are a collaborator on someone elses project the same URL works for
 your too!
 
-## Fix the problems and 
+## Install some tools
 
-1. Make sure that the devtools and pkgdown packages are installed
 ```
 install.packages("devtools")
 install.packages("pkgdown")
+install.packages("usethis")
 ```
-2. To build the documentation locally, use
+
+To build the documentation locally, use
 ```
 pkgdown::build_site()
 ```
-3. Run the package checks in the root directory by calling and inspect the output to find errors and warnigns.
+
+To set up a GitHub action that does this automatically on GitHub for you,
+```
+usethis::use_pkgdown_github_pages()
+```
+and follow the instructions (it is OK to overwrite `_pkgdown`!). 
+Do not forget to stage/commit/push the changes to your 'main' branch.
+
+Run the package checks in the root directory by calling and inspect the output to find errors and warnings.
 ```
 devtools::check()
 ```
+
+## Fix the problems and 
+
 4. Divide the problems with you collaborators.
 5. Each create your own branch from main using the RStudio interface.
 6. Start working on your problems and make a small change.

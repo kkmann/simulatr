@@ -13,8 +13,6 @@ Description: An example package for learning about software development
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
-URL: https://kkmann.github.io/workshop-r-swe, https://github.com/kkmann/workshop-r-swe
-BugReports: https://github.com/fpahlke/simulatr/issues
 Language: en-US
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
