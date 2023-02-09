@@ -4,25 +4,28 @@
 This repository contains the model solution of *simulatr*,
 an example package for learning about software development best-practices for R packages.
 
-First make sure that the devtools package is installed
+1. 
+
+Make sure that the devtools and pkgdown packages are installed
 ```
 install.packages("devtools")
+install.packages("pkgdown")
 ```
-Then run the package checks in the root directory by calling
+2. To build the documentation locally, use
+```
+pkgdown::build_site()
+```
+3. Run the package checks in the root directory by calling and inspect the output to find errors and warnigns.
 ```
 devtools::check()
 ```
-Inspect the output and fix the problems one by one.
+4. 
 
-To build the documentation locally, use
-```
-# install.packages("pkgdown")
-pkgdown::build_site()
-```
 
 Hint: start with the file `R/f_simulate_continuous_data.R`
 
-Remember to create a branch for each problem, commit your changes, push them,
+Remember
+* to create a branch for each problem, commit your changes, push them,
 and open a pull request from your branch on 'main'.
 Keep working on your branch until the error/warning you worked on is gone,
 then review and merge your pull request. 

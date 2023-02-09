@@ -8,7 +8,6 @@
 #'
 #' @param n1 a single integer value. The sample size of group 1.
 #' TODO document all arguments
-#' @param ... ensures that all arguments (starting from the "...") are to be named.
 #'
 #' @details
 #' TODO describe
