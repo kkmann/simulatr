@@ -87,6 +87,7 @@ print.SimulationResult <- function(x, ...) {
 #' Generic function to plot a \code{SimulationResult} object.
 #'
 #' @param x a \code{SimulationResult} object to plot.
+#' @param ... not used
 #' @param main an overall title for the plot.
 #' @param xlab a title for the x axis.
 #' @param ylab a title for the y axis.
@@ -108,6 +109,7 @@ print.SimulationResult <- function(x, ...) {
 #'
 plot.SimulationResult <- function(
         x,
+        ...,
         main = "Continuous Fake Data",
         xlab = "Group",
         ylab = "Simulated Values") {

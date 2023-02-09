@@ -6,6 +6,7 @@
 \usage{
 \method{plot}{SimulationResult}(
   x,
+  ...,
   main = "Continuous Fake Data",
   xlab = "Group",
   ylab = "Simulated Values"
@@ -13,6 +14,8 @@
 }
 \arguments{
 \item{x}{a \code{SimulationResult} object to plot.}
+
+\item{...}{not used}
 
 \item{main}{an overall title for the plot.}
 
