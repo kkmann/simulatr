@@ -4,19 +4,21 @@
 #' Get Simulated Two Arm Means
 #'
 #' @description
-#' Simulates and returns a normally distributed continuous dataset for two groups.
+#' Simulates and returns a normally distributed continuous dataset for two
+#' groups.
 #'
 #' @param n1 a single integer value. The sample size of group 1.
 #' TODO document all arguments
-#' @param ... ensures that all arguments (starting from the "...") are to be named.
 #'
 #' @details
 #' TODO describe
 #'
-#' @return a list with all arguments and results; the output is defined as a class with name 'SimulationResult'.
+#' @return a list with all arguments and results; the output is defined as a
+#' class with name 'SimulationResult'.
 #'
 #' @examples
-#' getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, mean2 = 7, sd1 = 3, sd2 = 4, seed = 123)
+#' getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, mean2 = 7, sd1 = 3,
+#'                         sd2 = 4, seed = 123)
 #'
 #' @export
 #'
@@ -66,13 +68,14 @@ getSimulatedTwoArmMeans <- function(
 #' @param ... further arguments passed to or from other methods.
 #'
 #' @examples
-#' x <- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, mean2 = 7, sd1 = 3, sd2 = 4, seed = 123)
+#' x <- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, mean2 = 7,
+#'                              sd1 = 3, sd2 = 4, seed = 123)
 #' print(x)
 #'
 #' @export
 #'
 print.SimulationResult <- function(x, ...) {
-		# TODO optimize the output format
+    # TODO optimize the output format
     print(class(x))
 }
 
@@ -84,10 +87,10 @@ print.SimulationResult <- function(x, ...) {
 #' Generic function to plot a \code{SimulationResult} object.
 #'
 #' @param x a \code{SimulationResult} object to plot.
+#' @param ... not used
 #' @param main an overall title for the plot.
 #' @param xlab a title for the x axis.
 #' @param ylab a title for the y axis.
-#' @param ... ensures that all arguments (starting from the "...") are to be named.
 #'
 #' @details
 #' Uses ggplot2 to create the plot.
@@ -96,7 +99,8 @@ print.SimulationResult <- function(x, ...) {
 #' A ggplot2 object.
 #'
 #' @examples
-#' x <- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, mean2 = 7, sd1 = 3, sd2 = 4, seed = 123)
+#' x <- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, mean2 = 7,
+#'                              sd1 = 3, sd2 = 4, seed = 123)
 #' if (require(ggplot2)) plot(x)
 #'
 #' @importFrom rlang .data
