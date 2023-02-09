@@ -48,11 +48,27 @@ Install the package itself
 devtools::install()
 ```
 
+We now need to set up git credentials for GitHub.com.
+This requires a personal access token - the 'usethis' package
+can help:
+```
+usethis::gh_token_help()
+usethis::create_github_token()
+```
+This opens the corresponding page on GitHub.com and you can simply copy the
+personal access token to your clipboard (default options are fine).
+Then call
+```
+`gitcreds::gitcreds_set()`
+```
+and enter your token to register it.
+
 Next, switch from the R 'Console' to the 'Terminal' tab and tell git who you are
 ```
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
+
 
 ## Find the problems
 
@@ -91,24 +107,8 @@ You can build the pkgdown documentation locally, using
 pkgdown::build_site() # does not look too pretty on posit.cloud
 ```
 
-To automate this with github actions, we resort to the 'usethis' package
-which is usually fairly up to date with recent changes in github actions.
-Tou need to set up a GitHub personal access token so that the 'usethis'
-package can help you with the remaining configuration.
-```
-usethis::gh_token_help()
-usethis::create_github_token()
-```
-This opens the corresponding page on GitHub.com and you can simply copy the
-personal access token to your clipboard (default options are fine).
-Then call
-```
-`gitcreds::gitcreds_set()`
-```
-and enter your token. 
-
-You can now set up a GitHub action that automatically builds you package
-documentation for you with the help of the 'usethis' package
+To automate this with github actions, we resort to the 'usethis' package,
+which is usually fairly up to date with recent changes in github actions:
 ```
 usethis::use_pkgdown_github_pages()
 ```
